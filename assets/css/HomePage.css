@@ -1,0 +1,627 @@
+.nav{
+    height: 390px;
+
+    /* border: 1px solid red; */
+}
+
+.HeaderBanner{
+    height: 380px;
+    padding: 5px;
+
+    /* border: 1px solid blue; */
+}
+
+
+/* //////// */
+/* ! */
+/* //////// */
+.main{
+    /* padding: 10px 0; */
+    /* height: 4000px; */
+    /* border: 1px solid blue; */
+}
+
+/* /// */
+/* Amazing product guarantees */
+.Guarantees{
+    height: 240px;
+    margin: 10px 0;
+    padding: 20px;
+
+    /* border: 1px solid red; */
+}
+
+.guarantees-item{
+    height: 200px;
+    padding: 13px 30px;
+
+    /* border: 1px solid black; */
+}
+
+.Guarantees-ul{
+    justify-content: space-evenly;
+    align-items: center;
+
+    padding: 10px 0;
+
+    /* border: 1px solid blue; */
+}
+
+.Guarantees-li{
+    width: 180px;
+    height: 150px;
+    padding: 10px  0;
+
+    /* border: 1px solid red; */
+}
+.Guarantees-li span{
+    width: 90px;
+    height: 80px;
+    padding: 10px;
+    margin: 0 auto;
+
+    /* border: 1px solid black; */
+}
+
+
+.Guarantees-li h5{
+    height: 50px;
+    font-size: 18px;
+    font-weight: 700;
+    align-items: center;
+    justify-content: center;
+
+    /* border: 1px solid blue; */
+}
+
+/* ! */
+
+/* ///////// */
+/* Product List and Box Style */
+.product-list {
+    width: auto;
+    height: 600px;
+    margin: 20px 0;
+    padding: 25px 0;
+    /* margin-top: 20px; */
+
+    /* border: 1px solid red; */
+}
+
+.product-header {
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    
+    display: flex;
+    /* border: 1px solid blue; */
+}
+
+.product-list-name {
+    font-size: 30px;
+    font-weight: 700;
+    color: #4e4e4e;
+}
+
+.product-item {
+    height: 500px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    /* border: 1px solid red; */
+}
+
+.box {
+    width: 275px;
+    height: 470px;
+    padding: 5px;
+
+    /* border: 1px solid black; */
+
+}
+
+.header-box {
+    position: relative;
+    display: block;
+    height: 290px;
+
+    /* border: 1px solid red; */
+}
+
+
+.Like-See{
+    position: absolute;
+    width: 40px;
+    top: 15px;
+    left: 15px;
+    padding: 5px;
+    /* background-color: aqua; */
+}
+.LikeSee{
+    display: flex;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #ebebebd7;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.LikeSee i{
+    font-size: 18px;
+}
+
+.like {
+    margin-bottom: 20px;
+    /* border: 1px solid #000; */
+}
+.see {
+    display: none;
+    transition: all ease 1s;
+    /* border: 1px solid red; */
+}
+.box:hover .see{
+    display: flex;
+}
+
+
+.discount-btn {
+    position: absolute;
+    width: 50px;
+    height: 25px;
+    top: 10px;
+    right: 15px;
+    justify-content: center;
+    align-items: center;
+    background-color: #db0000;
+    cursor: default;
+
+    display: flex;
+}
+.discount-btn span{
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.img-link {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /* background-color: blue; */
+    padding: 5px;
+    /* z-index: -1; */
+}
+
+.pd-img {
+    width: 100%;
+    height: 100%;
+}
+
+.ProductName {
+    height: 40px;
+    padding: 9px 15px;
+
+    /* border: 1px solid blue; */
+}
+
+.ProductName a {
+    font-size: 18px;
+    font-weight: 700;
+    color: #000;
+
+
+    text-decoration: none;
+    display: block;
+}
+
+.ProductDescription {
+    height: 30px;
+    padding: 7px 20px;
+    /* border: 1px solid blue; */
+}
+
+.ProductDescription p {
+    font-size: 14px;
+    font-weight: 500;
+    color: #6b6b6bcd;
+}
+
+
+.ProductPrice{
+    height: 40px;
+    align-items: center;
+    padding: 0 20px;            
+    display: flex;
+    /* border: 1px solid red; */
+}
+.ProductPrice span{
+    font-size: 19px;
+    color: rgb(214, 0, 0);
+    font-weight: 600;
+
+
+}
+
+.ProductPrice small {
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: line-through;
+    display: inline-block;
+    margin-right: 7px;
+    color: #363636a1;
+}
+
+
+.HideButton{
+    position: relative;
+    height: 50px;
+    margin-top: 5px;
+
+    /* border: 1px solid grey; */
+}
+.HideButton a{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: 600;
+    background-color: #000;
+    color: #fff;
+    padding: 15px 0;
+    text-align: center;
+    border-radius: 10px;
+
+}
+.HideButton a:hover{
+    transform: translateY(0);
+
+}
+
+/* ! */
+/* //// */
+/* Offer Banner style */
+.OfferBanner{
+    height: 500px;
+    padding: 25px 0;
+    margin: 20px 0;
+
+    /* border: 1px solid red; */
+}
+
+.OffBanner-item{
+    width: 1080px;
+    height: 450px;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+
+    /* border: 1px solid black; */
+}
+.banner-image{
+    width: 1040px;
+    height: 440px;
+
+    /* border: 1px solid blue; */
+}
+/* ! */
+
+/* ///////// */
+/* Advertise Banner style */
+.Advertise {
+    height: 550px;
+    margin: 20px 0;
+    padding: 25px 0;
+
+    /* border: 1px solid red; */
+}
+
+.advertise-item {
+    width: 1080px;
+    height: 500px;
+    margin: 0 auto;
+    /* border: 1px solid black */
+}
+
+/* ! */
+.dot-content {
+    display: block;
+    padding: 5px 0;
+
+    /* border: 1px solid green; */
+}
+
+.image-slide {
+    width: 1040px;
+    height: 440px;
+
+    /* border: 1px solid red; */
+}
+
+
+
+/* //// */
+.mySlides {
+    display: none;
+
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    height: 465px;
+
+    display: flex;
+    align-items: center;
+
+    justify-content: center;
+
+    /* border: 1px solid blueviolet; */
+}
+
+
+
+
+/* The dots/bullets/indicators */
+.dot {
+    height: 10px;
+    width: 10px;
+    margin: 0 2px;
+    background-color: #cfcece;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active {
+    background-color: #cdcdcd86;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+/* On smaller screens, decrease text size */
+/* @media only screen and (max-width: 300px) {
+.text {
+font-size: 11px
+}
+} */
+
+/* ! */
+
+/* ///////// */
+/* About us Website style */
+.AboutUS{
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+
+    /* border: 1px solid red; */
+}
+
+.AboutUsContent{
+    width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0;
+
+
+    /* border: 1px solid black; */
+}
+
+.AboutUsHeader{
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+
+
+    /* border: 1px solid blue; */
+}
+.UsHeaderText{
+    font-size: 36px;
+    font-weight: 700;
+    color: #000;
+}
+
+.AboutUsDescription{
+    text-align: center;
+    padding: 15px 30px;
+    justify-content: center;
+    align-items: center;
+
+    /* border: 1px solid red; */
+}
+.UsDescriptionText{
+    margin: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #616161;
+}
+
+/* ! */
+/* /////// */
+
+/* Internet magazine and blog */
+.MagazineBlog{
+    height: 750px;
+    margin: 20px 0;
+    padding: 15px;
+
+    /* border: 1px solid red; */
+}
+
+.MagazineBlog-item{
+    height: 720px;
+    padding: 10px 0;
+
+
+    /* border: 1px solid blue; */
+}
+
+.MagazineBlog-header{
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+
+    /* border: 1px solid black; */
+}
+.MagazineBlog-header{
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.blog-item{
+    height: 650px;
+    justify-content: space-around;
+    align-items: center;
+
+    /* border: 1px solid red; */
+}
+
+.blog-posts{
+    width: 450px;
+    height: 600px;
+    padding: 5px;
+
+    /* border: 1px solid black; */
+}
+.featured-blog-image{
+    height: 300px;
+    /* padding: 10px; */
+
+    /* border: 1px solid blue; */
+
+}
+
+.featured-blog-description{
+    height: 285px;
+    padding: 0 10px;
+
+
+    /* border: 1px solid red; */
+}
+.featured-blog-pd-name{
+    height: 100px;
+    align-items: center;
+    text-align: center;
+
+    /* border: 1px solid green; */
+}
+.featured-blog-pd-name a{
+    font-size: 20px;
+    font-weight: 600;
+}
+.featured-blog-pd-name a:hover{
+    color: #ff7f08;
+}
+
+.featured-blog-post-history{
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+
+    /* border: 1px solid blueviolet; */
+}
+.featured-blog-post-history span{
+    font-size: 16px;
+    font-weight: 500;
+    color: #bdbdbdb6;
+    cursor: context-menu;
+}
+
+.featured-blog-dc-text{
+    height: 80px;
+    justify-content: center;
+    align-items: center;
+    padding: 0 15px;
+
+    /* border: 1px solid blue; */
+}
+.featured-blog-dc-text p{
+    font-size: 16px;
+    color: #616161;
+    cursor: context-menu;
+
+}
+
+.featured-blog-readmore{
+    height: 60px;
+    padding: 6px 0;
+
+    /* border: 1px solid black; */
+}
+.featured-blog-readmore a{
+    width: 150px;
+    height: 45px;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    background-color: #1e1e1e;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    border: 3px solid #4e4e4e;
+    outline: 2px solid #1e1e1e;
+}
+
+/* ! */
+/* ///// */
+
+/* Sign in content */
+.SignIn{
+    height: 150px;
+    padding: 40px 20px;
+    background-color: #1e1e1e;
+    
+
+    /* border: 1px solid red; */
+}
+
+.SignInItem{
+    height: 70px;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    
+    /* border: 1px solid blue; */
+}
+
+.SignInDC{
+    font-size: 22px;
+    font-weight: 600;
+    color: #fff;
+    margin: 0 30px;
+}
+
+.SignInBtn{
+    width: 120px;
+    height: 40px;
+    margin: 0 20px;
+
+    background-color: #fff;
+    border: 1px solid #dddddd;
+}
+.SignInBtn a{
+    height: 100%;
+    font-size: 18px;
+    font-weight: 700;
+    justify-content: center;
+    align-items: center;
+}

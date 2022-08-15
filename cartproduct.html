@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
+
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/common-style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/cartproduct.css">
+
+    <!-- Code common file css(common-style.css) -->
+    <style>
+        body {
+            /* font-family: Open Sans, Arial, Helvetica, sans-serif; */
+            font-family: Rajdhani, sans-serif;
+
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        li,
+        ul {
+            list-style-type: none;
+        }
+
+        a {
+            text-decoration: none;
+            color: #000;
+        }
+
+
+        .d-block {
+            display: block;
+        }
+
+        .d-flex {
+            display: flex;
+        }
+
+        .f-width {
+            width: 100%;
+        }
+
+        .f-height {
+            height: 100%;
+        }
+    </style>
+
+    <style>
+        .liner {
+            margin: 10px 50px;
+            border-bottom: 1px solid #c2c2c2a2;
+        }
+
+        .pd-dc-div{
+            margin: 10px 0;
+        }
+    </style>
+
+    <title>Document</title>
+</head>
+
+<body>
+
+    <header class="header d-block">
+
+        <section class="header-item d-flex">
+
+            <div class="header-text d-flex">
+                <a class="header-text-a HomePage" href="home.html">HOME</a>
+                <a class="header-text-a ShopPage" href="shop.html">SHOP</a>
+                <a class="header-text-a" href="">CONTACT</a>
+            </div>
+
+            <div class="header-logo d-flex">
+                <div class="logo-image f-width">
+                    <img src="assets/image/logo-header.webp" alt="Logo website" class="f-width f-height">
+                </div>
+            </div>
+
+            <div class="header-button d-flex">
+                <div class="header-button-item d-flex">
+
+                    <div class="cart d-flex">
+                        <a href="" class="cart-link d-flex">
+                            <span class="cart-number d-flex">0</span>
+                            <i class="bi bi-cart3"></i>
+                        </a>
+                    </div>
+
+                    <div class="search d-flex">
+                        <form action="">
+                            <label for="search" class="search-icon d-flex"><i class="bi bi-search"></i></label>
+                            <input type="search" name="search" placeholder="Search Products" aria-label="search"
+                                id="search">
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+
+    </header>
+
+    <main class="main">
+
+        <section class="ProductCart d-block">
+
+            <div class="PdCart-item d-flex">
+
+                <div class="product-image ">
+
+                    <div class="show-image d-block">
+                        <a href="" class="PdIMG-link d-block">
+                            <img src="man-BodyShaper2.webp" alt="" id="product-image">
+                        </a>
+                    </div>
+
+                    <div class="other-image d-flex">
+                        <div class="OtherImg-item">
+                            <a href="" class="PdIMG-link d-block">
+                                <img src="other-img-products-cart1.webp" alt="" id="product-image">
+                            </a>
+                        </div>
+                        <div class="OtherImg-item">
+                            <a href="" class="PdIMG-link d-block">
+                                <img src="other-img-products-cart2.webp" alt="" id="product-image">
+                            </a>
+                        </div>
+                        <div class="OtherImg-item">
+                            <a href="" class="PdIMG-link d-block">
+                                <img src="other-img-products-cart3.webp" alt="" id="product-image">
+                            </a>
+                        </div>
+                        <div class="OtherImg-item">
+                            <a href="" class="PdIMG-link d-block">
+                                <img src="other-img-products-cart4.webp" alt="" id="product-image">
+                            </a>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <div class="product-description">
+
+                    <div class="product-name pd-dc-div">
+                        <h3 id="product-name">4D ELECTRIC SMART EYE MASSAGER BLUETOOTH VIBRATION</h3>
+                    </div>
+
+                    <div class="ProductRating pd-dc-div">
+
+                        <div class="rating-item d-flex">
+
+                            <div class="star-rating">
+                                <span id="star-ratingIcon">
+                                    <i class="bi bi-star-half"></i>
+                                    <i class="bi bi-star-half"></i>
+                                    <i class="bi bi-star-half"></i>
+                                    <i class="bi bi-star-half"></i>
+                                    <i class="bi bi-star-half"></i>
+                                </span>
+                                <span id="star-ratingScore">4.6 <i class="bi bi-chevron-down"></i></span>
+                            </div>
+
+                            <div class="reviews">
+                                <span id="reviews-number">149</span>
+                                <span id="reviews-text">Reviews</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="product-price d-flex pd-dc-div">
+                        <div class="price-item">
+                            <span>&dollar;49.99</span>
+                            <small>&dollar;99.99</small>
+                        </div>
+                    </div>
+
+
+                    <div class="product-availability d-flex pd-dc-div">
+                        <p id="product-availability">
+                            Availability: <span class="stock">9 In Stock</span>
+                        </p>
+                    </div>
+
+
+                    <div class="OrderNumber d-flex pd-dc-div">
+                        <div id="OrderNumber">
+                            <span class="Low odNumber-item d-flex"><i class="bi bi-dash-lg"></i></span>
+                            <span class="Number odNumber-item d-flex">1</span>
+                            <span class="Much odNumber-item d-flex"><i class="bi bi-plus-lg"></i></span>
+                        </div>
+                        <div class="subtotal-price d-flex">
+                            <span class="SubtotalPrice-text">Subtotal:</span>
+                            <span class="SubtotalPrice-number">&dollar;49.99</span>
+                        </div>
+                    </div>
+
+                    <div class="ProductButton d-block pd-dc-div">
+
+                        <div id="ProductButton" class="d-flex">
+
+                            <div class="BuyNow-bttn pd-bttn d-flex">
+                                <a href="" class="pd-bttn-link BuyNow-link d-flex">
+                                    <span class="BouNow-text">Bou Now</span>
+                                </a>
+                            </div>
+
+                            <div class="AddCart-bttn pd-bttn">
+                                <a href="" class="pd-bttn-link AddCart-link d-flex">
+                                    <span class="AddCart-text">Add to Cart</span>
+                                </a>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="Question d-flex">
+                        <span>Have Questions?</span>
+                        <a href="#">Ask an Expert</a>
+                    </div>
+
+                </div>
+            </div>
+
+
+
+        </section>
+
+        <div class="liner"></div>
+
+        <section class="ProductDescription">
+
+            <div class="Description">
+
+                <section class="descrtiption-item">
+
+                    <div class="description-header DescriptionW">
+                        <h3 href="" class="">DESCRIPTION</h3>
+
+                    </div>
+
+                    <div class="description-content " id="DescriptionCh">
+
+                        <h4 class="dc-pd-header">MEN BODY SHAPER WAIST TRAINER VEST SLIMMING SHIRT</h4>
+
+                        <p class="dc-pd-content">
+                            <span class="content-item-head">2-IN-1 SAUNA VEST WITH WAIST TRAINER</span>
+                            <span class="content-item-dc">
+                                Our men sauna vest is made from the finest quality 100% neoprene, which helps you burn
+                                more
+                                calories and lose weight faster than your usual workout wear by stimulate sweat and lock
+                                body
+                                heat. If you want extra tight coverage on the lower Abdomen, Our extra waist straps
+                                definitely
+                                do the job. Located on the outer neoprene waist trimmer makes your sauna tank top vest
+                                zipper to
+                                hug your waist tighter, thus enhancing the workout sweat effect.
+                            </span>
+                        </p>
+
+                        <p class="dc-pd-content">
+                            <span class="content-item-head">UPGRADE WIDER DESIGN</span>
+                            <span class="content-item-dc">
+                                We designed two waistband to tighten our midriff better than a single. We also widened
+                                the
+                                belt
+                                to cover more of your belly, removing muffin epithelium and other bulges, and giving
+                                your
+                                waistline a smoother look. The girdle design allows the workout sweat vest for men with
+                                zipper
+                                to more closely fit your body during your workout, helping you to stimulate more sweat
+                                in
+                                the
+                                right position, and achieve the overall burning of calories from the chest, waist, and
+                                back.
+                            </span>
+                        </p>
+
+                        <p class="dc-pd-content">
+                            <span class="content-item-head">EXCELLENT MATERIAL & WORKMANSHIP</span>
+                            <span class="content-item-dc">
+                                Our sauna suit for men weight loss is made of 100% Polyester, which feels soft & smooth
+                                to
+                                the
+                                touch, reducing friction and making it more comfortable. The sturdy zipper is perfect
+                                for
+                                easy
+                                slip on and off,and the inner protective layer material keeps it from pinching your skin
+                                when
+                                zipping up. The men zipper neoprene sauna vest are of medium thickness for optimal
+                                sweating
+                                without limiting movement. It has good elasticity and is not easy to deform when
+                                pulling.
+                            </span>
+                        </p>
+
+                        <p class="dc-pd-content">
+                            <span class="content-item-head">COMPRESSION & SUPPORT</span>
+                            <span class="content-item-dc">
+                                Our neoprene sweat vest for men combine with the waistband to flatten the stomach and
+                                trim
+                                the
+                                waistline. High compression and lower back support help correct your posture and reduce
+                                the
+                                risk
+                                of injury during your workout. If you want to enhance your appearance and burn belly fat
+                                to
+                                shrink your waistline, this sauna shirt for men burn fat is the ideal choice. It can
+                                help
+                                you
+                                reduce excess fat and build muscle, endurance and core strength, thereby promoting
+                                weight
+                                loss.
+                            </span>
+                        </p>
+
+                    </div>
+                    
+                </section>
+
+
+
+            </div>
+        </section>
+
+        <div class="liner"></div>
+
+        <section class="RelatedProduct">
+
+            <div class="headerRelated d-flex">
+                <h3>Related Products</h3>
+            </div>
+
+            <div class="slider-show">
+
+                <div class="slider">
+
+                    <div class="box">
+
+                        <div class="header-box">
+    
+                            <a href="" class="img-link">
+                                <img src="other-img-products-cart1.webp" alt="" class="pd-img">
+                            </a>
+    
+                            <div class="Like-See">
+                                <div class="like LikeSee"><i class="bi bi-heart"></i></div>
+                                <div class="see LikeSee"><i class="bi bi-eye"></i></div>
+                            </div>
+    
+                            <div class="discount-btn icon-button d-flex">
+                                <span>%50</span>
+                            </div>
+    
+                        </div>
+    
+                        <div class="ProductName">
+                            <a href="#" class="">Catapult For Dogs</a>
+                        </div>
+                        <div class="ProductDescription-cart">
+                            <p>Lorem ipsum dolor sit amet...</p>
+                        </div>
+    
+                        <div class="ProductPrice">
+                            <small>&dollar;99.99</small>
+                            <span>&dollar;49.99</span>
+                        </div>
+    
+                        <div class="HideButton">
+                            <a href="">Add to cart</a>
+                        </div>
+    
+                    </div>
+
+                    <div class="box">
+
+                        <div class="header-box">
+    
+                            <a href="" class="img-link">
+                                <img src="other-img-products-cart2.webp" alt="" class="pd-img">
+                            </a>
+    
+                            <div class="Like-See">
+                                <div class="like LikeSee"><i class="bi bi-heart"></i></div>
+                                <div class="see LikeSee"><i class="bi bi-eye"></i></div>
+                            </div>
+    
+                            <div class="discount-btn icon-button d-flex">
+                                <span>%50</span>
+                            </div>
+    
+                        </div>
+    
+                        <div class="ProductName">
+                            <a href="#" class="">Catapult For Dogs</a>
+                        </div>
+                        <div class="ProductDescription-cart">
+                            <p>Lorem ipsum dolor sit amet...</p>
+                        </div>
+    
+                        <div class="ProductPrice">
+                            <small>&dollar;99.99</small>
+                            <span>&dollar;49.99</span>
+                        </div>
+    
+                        <div class="HideButton">
+                            <a href="">Add to cart</a>
+                        </div>
+    
+                    </div>
+
+                    <div class="box">
+
+                        <div class="header-box">
+    
+                            <a href="" class="img-link">
+                                <img src="other-img-products-cart3.webp" alt="" class="pd-img">
+                            </a>
+    
+                            <div class="Like-See">
+                                <div class="like LikeSee"><i class="bi bi-heart"></i></div>
+                                <div class="see LikeSee"><i class="bi bi-eye"></i></div>
+                            </div>
+    
+                            <div class="discount-btn icon-button d-flex">
+                                <span>%50</span>
+                            </div>
+    
+                        </div>
+    
+                        <div class="ProductName">
+                            <a href="#" class="">Catapult For Dogs</a>
+                        </div>
+                        <div class="ProductDescription-cart">
+                            <p>Lorem ipsum dolor sit amet...</p>
+                        </div>
+    
+                        <div class="ProductPrice">
+                            <small>&dollar;99.99</small>
+                            <span>&dollar;49.99</span>
+                        </div>
+    
+                        <div class="HideButton">
+                            <a href="">Add to cart</a>
+                        </div>
+    
+                    </div>
+
+                    <div class="box">
+
+                        <div class="header-box">
+    
+                            <a href="" class="img-link">
+                                <img src="other-img-products-cart1.webp" alt="" class="pd-img">
+                            </a>
+    
+                            <div class="Like-See">
+                                <div class="like LikeSee"><i class="bi bi-heart"></i></div>
+                                <div class="see LikeSee"><i class="bi bi-eye"></i></div>
+                            </div>
+    
+                            <div class="discount-btn icon-button d-flex">
+                                <span>%50</span>
+                            </div>
+    
+                        </div>
+    
+                        <div class="ProductName">
+                            <a href="#" class="">Catapult For Dogs</a>
+                        </div>
+                        <div class="ProductDescription-cart">
+                            <p>Lorem ipsum dolor sit amet...</p>
+                        </div>
+    
+                        <div class="ProductPrice">
+                            <small>&dollar;99.99</small>
+                            <span>&dollar;49.99</span>
+                        </div>
+    
+                        <div class="HideButton">
+                            <a href="">Add to cart</a>
+                        </div>
+    
+                    </div>
+
+                    <div class="box">
+
+                        <div class="header-box">
+    
+                            <a href="" class="img-link">
+                                <img src="other-img-products-cart2.webp" alt="" class="pd-img">
+                            </a>
+    
+                            <div class="Like-See">
+                                <div class="like LikeSee"><i class="bi bi-heart"></i></div>
+                                <div class="see LikeSee"><i class="bi bi-eye"></i></div>
+                            </div>
+    
+                            <div class="discount-btn icon-button d-flex">
+                                <span>%50</span>
+                            </div>
+    
+                        </div>
+    
+                        <div class="ProductName">
+                            <a href="#" class="">Catapult For Dogs</a>
+                        </div>
+                        <div class="ProductDescription-cart">
+                            <p>Lorem ipsum dolor sit amet...</p>
+                        </div>
+    
+                        <div class="ProductPrice">
+                            <small>&dollar;99.99</small>
+                            <span>&dollar;49.99</span>
+                        </div>
+    
+                        <div class="HideButton">
+                            <a href="">Add to cart</a>
+                        </div>
+    
+                    </div>
+
+                    <div class="box">
+
+                        <div class="header-box">
+    
+                            <a href="" class="img-link">
+                                <img src="other-img-products-cart3.webp" alt="" class="pd-img">
+                            </a>
+    
+                            <div class="Like-See">
+                                <div class="like LikeSee"><i class="bi bi-heart"></i></div>
+                                <div class="see LikeSee"><i class="bi bi-eye"></i></div>
+                            </div>
+    
+                            <div class="discount-btn icon-button d-flex">
+                                <span>%50</span>
+                            </div>
+    
+                        </div>
+    
+                        <div class="ProductName">
+                            <a href="#" class="">Catapult For Dogs</a>
+                        </div>
+                        <div class="ProductDescription-cart">
+                            <p>Lorem ipsum dolor sit amet...</p>
+                        </div>
+    
+                        <div class="ProductPrice">
+                            <small>&dollar;99.99</small>
+                            <span>&dollar;49.99</span>
+                        </div>
+    
+                        <div class="HideButton">
+                            <a href="">Add to cart</a>
+                        </div>
+    
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer class="footer">
+
+        <section class="FooterItem">
+
+            <div class="footerLinks d-flex">
+
+                <section class="FooterLinkCategory">
+
+                    <h4>HELP</h4>
+
+                    <a href="#" class="FtCtLink">Track Your Order</a>
+                    <a href="#" class="FtCtLink">Shipping & Delivery</a>
+                    <a href="#" class="FtCtLink">Terms Of Service</a>
+                    <a href="#" class="FtCtLink">Privacy Policy</a>
+
+                </section>
+
+                <section class="FooterLinkCategory">
+
+                    <h4>ABOUT</h4>
+
+                    <a href="#" class="FtCtLink">About Us</a>
+                    <a href="#" class="FtCtLink">Contact</a>
+                    <a href="#" class="FtCtLink">FAQ</a>
+
+                </section>
+
+                <section class="FooterLinkCategory">
+
+                    <h4>PAYMENT GATEWAYS</h4>
+
+                    <div class="payment d-flex">
+                        <div class="PaymentIcon">
+                            <a href="#" class="PaymentLinks">
+                                <img src="assets/image/paypal.png" class="PaymentLogo-img">
+                            </a>
+                        </div>
+                        <div class="PaymentIcon">
+                            <a href="#" class="PaymentLinks">
+                                <img src="assets/image/payment.png" alt="" class="PaymentLogo-img">
+                            </a>
+                        </div>
+                        <div class="PaymentIcon">
+                            <a href="#" class="PaymentLinks">
+                                <img src="assets/image/sslverify.png" alt="" class="PaymentLogo-img">
+                            </a>
+                        </div>
+                        <div class="PaymentIcon">
+                            <a href="#" class="PaymentLinks">
+                                <img src="assets/image/Bitcoin.png" alt="" class="PaymentLogo-img">
+                            </a>
+                        </div>
+                    </div>
+
+                </section>
+
+            </div>
+
+            <div class="SocialNetworks">
+                <div class="connections">
+
+                    <h5 id="wrapper-header">Follow us on social networks</h5>
+
+                    <div class="wrapper">
+
+                        <a id="wrapper-a" href="#">
+                            <div class="icon twitter">
+                                <div class="tooltip">Twitter</div>
+                                <span><i class="bi bi-twitter"></i></span>
+                            </div>
+                        </a>
+
+                        <a id="wrapper-a" href="#">
+                            <div class="icon telegram">
+                                <div class="tooltip">Telegram</div>
+                                <span><i class="bi bi-telegram"></i></span>
+                            </div>
+                        </a>
+
+                        <a id="wrapper-a" href="#">
+                            <div class="icon tiktok">
+
+                                <div class="tooltip">Tiktok</div>
+                                <span><i class="bi bi-tiktok"></i></span>
+
+                            </div>
+                        </a>
+
+                        <a id="wrapper-a" href="#">
+                            <div class="icon youtube">
+                                <div class="tooltip">Youtube</div>
+                                <span><i class="bi bi-youtube"></i></span>
+                            </div>
+                        </a>
+
+                        <a id="wrapper-a" href="#">
+                            <div class="icon instagram">
+                                <div class="tooltip">Instagram</div>
+                                <span><i class="bi bi-instagram"></i></span>
+                            </div>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div class="CopyRight d-flex">
+                    <p>&copy; Masiih jebraeili 2021</p>
+                </div>
+
+            </div>
+
+        </section>
+
+        
+
+    </footer>
+
+</body>
+
+<script>
+    const slider = document.querySelector('.slider');
+    let isDown = false;
+    let startX;
+    let sLeft;
+    slider.scrollLeft = 0;
+
+    slider.addEventListener('mousedown', (e) => {
+        isDown = true;
+        startX = e.pageX;
+        sLeft = slider.scrollLeft;
+    });
+
+    slider.addEventListener('mouseleave', () => {
+        isDown = false;
+    });
+    slider.addEventListener('mouseup', () => {
+        isDown = false;
+    });
+
+    slider.addEventListener('mousemove', (e) => {
+        if (!isDown) return;
+        e.preventDefault();
+        const x = e.pageX;
+        const dragged = x - startX;
+        slider.scrollLeft = sLeft - dragged;
+    });
+</script>
+
+</html>

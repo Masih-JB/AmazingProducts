@@ -1,0 +1,1269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
+
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/common-style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/ShopPage.css">
+
+    <style>
+        .cta {
+            width: max-content;
+            height: max-content;
+            display: flex;
+            align-items: center;
+            color: #000;
+            background: none;
+            border: none;
+            padding: 10px 15px;
+            position: relative;
+
+            /* border: 1px solid red; */
+        }
+
+        .cta::before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%) translateX(calc(100% + 4px));
+            width: 45px;
+            height: 45px;
+            background-color: #f4a137;
+            border-radius: 50px;
+            transition: transform .25s .25s cubic-bezier(0, 0, .5, 2), width .25s cubic-bezier(0, 0, .5, 2);
+            z-index: -1;
+        }
+
+        .cta:hover::before {
+            width: 100%;
+            transform: translateY(-50%) translateX(-18px);
+            transition: transform .25s cubic-bezier(0, 0, .5, 2), width .25s .25s cubic-bezier(0, 0, .5, 2);
+        }
+
+        .cta i {
+            margin-left: 5px;
+            transition: transform .25s .4s cubic-bezier(0, 0, .5, 2);
+        }
+
+        .cta:hover i {
+            transform: translateX(3px);
+        }
+    </style>
+
+    <style>
+        .ShopPage{
+            color: #e70202;
+        }
+    </style>
+
+    <title>Document</title>
+</head>
+
+<body>
+
+    <header class="header d-block">
+
+        <section class="header-item d-flex">
+
+            <div class="header-text d-flex">
+                <a class="header-text-a HomePage" href="home.html">HOME</a>
+                <a class="header-text-a ShopPage" href="shop.html">SHOP</a>
+                <a class="header-text-a" href="">CONTACT</a>
+            </div>
+
+            <div class="header-logo d-flex">
+                <div class="logo-image f-width">
+                    <img src="/HTML/assets/image/logo-header.webp" alt="Logo website" class="f-width f-height">
+                </div>
+            </div>
+
+            <div class="header-button d-flex">
+                <div class="header-button-item d-flex">
+
+                    <div class="cart d-flex">
+                        <a href="" class="cart-link d-flex">
+                            <span class="cart-number d-flex">0</span>
+                            <i class="bi bi-cart3"></i>
+                        </a>
+                    </div>
+
+                    <div class="search d-flex">
+                        <form action="">
+                            <label for="search" class="search-icon d-flex"><i class="bi bi-search"></i></label>
+                            <input type="search" name="search" placeholder="Search Products" aria-label="search"
+                                id="search">
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+
+    </header>
+
+    <nav class="nav">
+
+        <div class="NavItem ">
+            
+            <div class="SliderPrice ">
+                <h2 class="TextPrice">Price:</h2>
+                <p class="NumberPrice">$ 100</p>
+                <div class="sliderLine"></div>
+            </div>
+
+            <div class="GroupingProduct d-flex">
+                <div class="ListItem d-flex">
+                    <a href="" class="ListProducts chosen">All Product <i class="bi bi-chevron-down"></i></a>
+
+                    <div class="ListHide">
+                        <a href="FamilyProduct.html" class="ListProducts">Family Products</a>
+                        <a href="PetProduct.html" class="ListProducts">Pet Products</a>
+                        <a href="Accessories.html" class="ListProducts">Accessories Products</a>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </nav>
+
+    <main class="main">
+
+
+        <!-- Family Products List -->
+        <div class="product-list">
+
+            <div class="product-header d-flex">
+                <h2 class="product-list-name">Family Products</h2>
+            </div>
+
+            <div class="product-item">
+
+                <div class="box">
+
+                    <div class="header-box">
+
+                        <a href="" class="img-link">
+                            <img src="assets/image/product-img/EyeMassager.webp" alt="" class="pd-img">
+                        </a>
+
+                        <div class="Like-See">
+                            <div class="like LikeSee"><i class="bi bi-heart"></i></div>
+                            <div class="see LikeSee"><i class="bi bi-eye"></i></div>
+                        </div>
+
+                        <div class="discount-btn icon-button d-flex">
+                            <span>%50</span>
+                        </div>
+
+                    </div>
+
+                    <div class="ProductName">
+                        <a href="#" class="">Catapult For Dogs</a>
+                    </div>
+                    <div class="ProductDescription">
+                        <p>Lorem ipsum dolor sit amet...</p>
+                    </div>
+
+                    <div class="ProductPrice">
+                        <small>&dollar;99.99</small>
+                        <span>&dollar;49.99</span>
+                    </div>
+
+                    <div class="HideButton">
+                        <a href="">Add to cart</a>
+                    </div>
+
+                </div>
+
+                <div class="box">
+
+                    <div class="header-box">
+
+                        <a href="" class="img-link">
+                            <img src="assets/image/product-img/MiniShaver.webp" alt="" class="pd-img">
+                        </a>
+
+                        <div class="Like-See">
+                            <div class="like LikeSee"><i class="bi bi-heart"></i></div>
+                            <div class="see LikeSee"><i class="bi bi-eye"></i></div>
+                        </div>
+
+                        <div class="discount-btn icon-button d-flex">
+                            <span>%50</span>
+                        </div>
+
+                    </div>
+
+                    <div class="ProductName">
+                        <a href="#" class="">Catapult For Dogs</a>
+                    </div>
+                    <div class="ProductDescription">
+                        <p>Lorem ipsum dolor sit amet...</p>
+                    </div>
+
+                    <div class="ProductPrice">
+                        <small>&dollar;99.99</small>
+                        <span>&dollar;49.99</span>
+                    </div>
+
+                    <div class="HideButton">
+                        <a href="">Add to cart</a>
+                    </div>
+
+                </div>
+
+                <div class="box">
+
+                    <div class="header-box">
+
+                        <a href="" class="img-link">
+                            <img src="assets/image/product-img/man-BodyShaper.webp" alt="" class="pd-img">
+                        </a>
+
+                        <div class="Like-See">
+                            <div class="like LikeSee"><i class="bi bi-heart"></i></div>
+                            <div class="see LikeSee"><i class="bi bi-eye"></i></div>
+                        </div>
+
+                        <div class="discount-btn icon-button d-flex">
+                            <span>%50</span>
+                        </div>
+
+                    </div>
+
+                    <div class="ProductName">
+                        <a href="#" class="">Catapult For Dogs</a>
+                    </div>
+                    <div class="ProductDescription">
+                        <p>Lorem ipsum dolor sit amet...</p>
+                    </div>
+
+                    <div class="ProductPrice">
+                        <small>&dollar;99.99</small>
+                        <span>&dollar;49.99</span>
+                    </div>
+
+                    <div class="HideButton">
+                        <a href="">Add to cart</a>
+                    </div>
+
+                </div>
+
+                <div class="box">
+
+                    <div class="header-box">
+
+                        <a href="" class="img-link">
+                            <img src="assets/image/product-img/man-BodyShaper2.webp" alt="" class="pd-img">
+                        </a>
+
+                        <div class="Like-See">
+                            <div class="like LikeSee"><i class="bi bi-heart"></i></div>
+                            <div class="see LikeSee"><i class="bi bi-eye"></i></div>
+                        </div>
+
+                        <div class="discount-btn icon-button d-flex">
+                            <span>%50</span>
+                        </div>
+
+                    </div>
+
+                    <div class="ProductName">
+                        <a href="#" class="">Catapult For Dogs</a>
+                    </div>
+                    <div class="ProductDescription">
+                        <p>Lorem ipsum dolor sit amet...</p>
+                    </div>
+
+                    <div class="ProductPrice">
+                        <small>&dollar;99.99</small>
+                        <span>&dollar;49.99</span>
+                    </div>
+
+                    <div class="HideButton">
+                        <a href="">Add to cart</a>
+                    </div>
+
+                </div>
+
+                
+
+                <!-- //// -->
+
+                <div class="box">
+
+                    <div class="header-box">
+
+                        <a href="" class="img-link">
+                            <img src="assets/image/product-img/EyeMassager.webp" alt="" class="pd-img">
+                        </a>
+
+                        <div class="Like-See">
+                            <div class="like LikeSee"><i class="bi bi-heart"></i></div>
+                            <div class="see LikeSee"><i class="bi bi-eye"></i></div>
+                        </div>
+
+                        <div class="discount-btn icon-button d-flex">
+                            <span>%50</span>
+                        </div>
+
+                    </div>
+
+                    <div class="ProductName">
+                        <a href="#" class="">Catapult For Dogs</a>
+                    </div>
+                    <div class="ProductDescription">
+                        <p>Lorem ipsum dolor sit amet...</p>
+                    </div>
+
+                    <div class="ProductPrice">
+                        <small>&dollar;99.99</small>
+                        <span>&dollar;49.99</span>
+                    </div>
+
+                    <div class="HideButton">
+                        <a href="">Add to cart</a>
+                    </div>
+
+                </div>
+
+                <div class="box">
+
+                    <div class="header-box">
+
+                        <a href="" class="img-link">
+                            <img src="assets/image/product-img/MiniShaver.webp" alt="" class="pd-img">
+                        </a>
+
+                        <div class="Like-See">
+                            <div class="like LikeSee"><i class="bi bi-heart"></i></div>
+                            <div class="see LikeSee"><i class="bi bi-eye"></i></div>
+                        </div>
+
+                        <div class="discount-btn icon-button d-flex">
+                            <span>%50</span>
+                        </div>
+
+                    </div>
+
+                    <div class="ProductName">
+                        <a href="#" class="">Catapult For Dogs</a>
+                    </div>
+                    <div class="ProductDescription">
+                        <p>Lorem ipsum dolor sit amet...</p>
+                    </div>
+
+                    <div class="ProductPrice">
+                        <small>&dollar;99.99</small>
+                        <span>&dollar;49.99</span>
+                    </div>
+
+                    <div class="HideButton">
+                        <a href="">Add to cart</a>
+                    </div>
+
+                </div>
+
+                <div class="box">
+
+                    <div class="header-box">
+
+                        <a href="" class="img-link">
+                            <img src="assets/image/product-img/man-BodyShaper.webp" alt="" class="pd-img">
+                        </a>
+
+                        <div class="Like-See">
+                            <div class="like LikeSee"><i class="bi bi-heart"></i></div>
+                            <div class="see LikeSee"><i class="bi bi-eye"></i></div>
+                        </div>
+
+                        <div class="discount-btn icon-button d-flex">
+                            <span>%50</span>
+                        </div>
+
+                    </div>
+
+                    <div class="ProductName">
+                        <a href="#" class="">Catapult For Dogs</a>
+                    </div>
+                    <div class="ProductDescription">
+                        <p>Lorem ipsum dolor sit amet...</p>
+                    </div>
+
+                    <div class="ProductPrice">
+                        <small>&dollar;99.99</small>
+                        <span>&dollar;49.99</span>
+                    </div>
+
+                    <div class="HideButton">
+                        <a href="">Add to cart</a>
+                    </div>
+
+                </div>
+
+                <div class="box">
+
+                    <div class="header-box">
+
+                        <a href="" class="img-link">
+                            <img src="assets/image/product-img/man-BodyShaper2.webp" alt="" class="pd-img">
+                        </a>
+
+                        <div class="Like-See">
+                            <div class="like LikeSee"><i class="bi bi-heart"></i></div>
+                            <div class="see LikeSee"><i class="bi bi-eye"></i></div>
+                        </div>
+
+                        <div class="discount-btn icon-button d-flex">
+                            <span>%50</span>
+                        </div>
+
+                    </div>
+
+                    <div class="ProductName">
+                        <a href="#" class="">Catapult For Dogs</a>
+                    </div>
+                    <div class="ProductDescription">
+                        <p>Lorem ipsum dolor sit amet...</p>
+                    </div>
+
+                    <div class="ProductPrice">
+                        <small>&dollar;99.99</small>
+                        <span>&dollar;49.99</span>
+                    </div>
+
+                    <div class="HideButton">
+                        <a href="">Add to cart</a>
+                    </div>
+
+                </div>
+
+                
+
+            </div>
+
+            <!-- see more button -->
+            <div class="SeeMore d-flex">
+                <div class="bttnSeeMore">
+                    <a href="" class="SeeMoreLink cta d-flex">
+                        <span>See all</span> <i class="bi bi-chevron-right"></i>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+        <!-- //// -->
+
+        <!-- Advertise Banner (1) -->
+        <div class="Advertise d-block">
+            <div class="AdvertiseItem ">
+
+                <a href="#" class="AdvertiseLink d-block">
+
+                    <img src="assets/image/file_cover_-_1.webp" alt="" class="AdvertiseBanner">
+
+                </a>
+
+            </div>
+        </div>
+        <!-- //// -->
+
+        <!-- Pet Products List -->
+        <div class="product-list">
+
+            <div class="product-header d-flex">
+                <h2 class="product-list-name">Pet Products</h2>
+            </div>
+
+            <div class="product-item">
+
+                <div class="box">
+
+                    <div class="header-box">
+
+                        <a href="" class="img-link">
+                            <img src="assets/image/product-img/EyeMassager.webp" alt="" class="pd-img">
+                        </a>
+
+                        <div class="Like-See">
+                            <div class="like LikeSee"><i class="bi bi-heart"></i></div>
+                            <div class="see LikeSee"><i class="bi bi-eye"></i></div>
+                        </div>
+
+                        <div class="discount-btn icon-button d-flex">
+                            <span>%50</span>
+                        </div>
+
+                    </div>
+
+                    <div class="ProductName">
+                        <a href="#" class="">Catapult For Dogs</a>
+                    </div>
+                    <div class="ProductDescription">
+                        <p>Lorem ipsum dolor sit amet...</p>
+                    </div>
+
+                    <div class="ProductPrice">
+                        <small>&dollar;99.99</small>
+                        <span>&dollar;49.99</span>
+                    </div>
+
+                    <div class="HideButton">
+                        <a href="">Add to cart</a>
+                    </div>
+
+                </div>
+
+                <div class="box">
+
+                    <div class="header-box">
+
+                        <a href="" class="img-link">
+                            <img src="assets/image/product-img/MiniShaver.webp" alt="" class="pd-img">
+                        </a>
+
+                        <div class="Like-See">
+                            <div class="like LikeSee"><i class="bi bi-heart"></i></div>
+                            <div class="see LikeSee"><i class="bi bi-eye"></i></div>
+                        </div>
+
+                        <div class="discount-btn icon-button d-flex">
+                            <span>%50</span>
+                        </div>
+
+                    </div>
+
+                    <div class="ProductName">
+                        <a href="#" class="">Catapult For Dogs</a>
+                    </div>
+                    <div class="ProductDescription">
+                        <p>Lorem ipsum dolor sit amet...</p>
+                    </div>
+
+                    <div class="ProductPrice">
+                        <small>&dollar;99.99</small>
+                        <span>&dollar;49.99</span>
+                    </div>
+
+                    <div class="HideButton">
+                        <a href="">Add to cart</a>
+                    </div>
+
+                </div>
+
+                <div class="box">
+
+                    <div class="header-box">
+
+                        <a href="" class="img-link">
+                            <img src="assets/image/product-img/man-BodyShaper.webp" alt="" class="pd-img">
+                        </a>
+
+                        <div class="Like-See">
+                            <div class="like LikeSee"><i class="bi bi-heart"></i></div>
+                            <div class="see LikeSee"><i class="bi bi-eye"></i></div>
+                        </div>
+
+                        <div class="discount-btn icon-button d-flex">
+                            <span>%50</span>
+                        </div>
+
+                    </div>
+
+                    <div class="ProductName">
+                        <a href="#" class="">Catapult For Dogs</a>
+                    </div>
+                    <div class="ProductDescription">
+                        <p>Lorem ipsum dolor sit amet...</p>
+                    </div>
+
+                    <div class="ProductPrice">
+                        <small>&dollar;99.99</small>
+                        <span>&dollar;49.99</span>
+                    </div>
+
+                    <div class="HideButton">
+                        <a href="">Add to cart</a>
+                    </div>
+
+                </div>
+
+                <div class="box">
+
+                    <div class="header-box">
+
+                        <a href="" class="img-link">
+                            <img src="assets/image/product-img/man-BodyShaper2.webp" alt="" class="pd-img">
+                        </a>
+
+                        <div class="Like-See">
+                            <div class="like LikeSee"><i class="bi bi-heart"></i></div>
+                            <div class="see LikeSee"><i class="bi bi-eye"></i></div>
+                        </div>
+
+                        <div class="discount-btn icon-button d-flex">
+                            <span>%50</span>
+                        </div>
+
+                    </div>
+
+                    <div class="ProductName">
+                        <a href="#" class="">Catapult For Dogs</a>
+                    </div>
+                    <div class="ProductDescription">
+                        <p>Lorem ipsum dolor sit amet...</p>
+                    </div>
+
+                    <div class="ProductPrice">
+                        <small>&dollar;99.99</small>
+                        <span>&dollar;49.99</span>
+                    </div>
+
+                    <div class="HideButton">
+                        <a href="">Add to cart</a>
+                    </div>
+
+                </div>
+
+                <!-- //// -->
+
+                <div class="box">
+
+                    <div class="header-box">
+
+                        <a href="" class="img-link">
+                            <img src="assets/image/product-img/EyeMassager.webp" alt="" class="pd-img">
+                        </a>
+
+                        <div class="Like-See">
+                            <div class="like LikeSee"><i class="bi bi-heart"></i></div>
+                            <div class="see LikeSee"><i class="bi bi-eye"></i></div>
+                        </div>
+
+                        <div class="discount-btn icon-button d-flex">
+                            <span>%50</span>
+                        </div>
+
+                    </div>
+
+                    <div class="ProductName">
+                        <a href="#" class="">Catapult For Dogs</a>
+                    </div>
+                    <div class="ProductDescription">
+                        <p>Lorem ipsum dolor sit amet...</p>
+                    </div>
+
+                    <div class="ProductPrice">
+                        <small>&dollar;99.99</small>
+                        <span>&dollar;49.99</span>
+                    </div>
+
+                    <div class="HideButton">
+                        <a href="">Add to cart</a>
+                    </div>
+
+                </div>
+
+                <div class="box">
+
+                    <div class="header-box">
+
+                        <a href="" class="img-link">
+                            <img src="assets/image/product-img/MiniShaver.webp" alt="" class="pd-img">
+                        </a>
+
+                        <div class="Like-See">
+                            <div class="like LikeSee"><i class="bi bi-heart"></i></div>
+                            <div class="see LikeSee"><i class="bi bi-eye"></i></div>
+                        </div>
+
+                        <div class="discount-btn icon-button d-flex">
+                            <span>%50</span>
+                        </div>
+
+                    </div>
+
+                    <div class="ProductName">
+                        <a href="#" class="">Catapult For Dogs</a>
+                    </div>
+                    <div class="ProductDescription">
+                        <p>Lorem ipsum dolor sit amet...</p>
+                    </div>
+
+                    <div class="ProductPrice">
+                        <small>&dollar;99.99</small>
+                        <span>&dollar;49.99</span>
+                    </div>
+
+                    <div class="HideButton">
+                        <a href="">Add to cart</a>
+                    </div>
+
+                </div>
+
+                <div class="box">
+
+                    <div class="header-box">
+
+                        <a href="" class="img-link">
+                            <img src="assets/image/product-img/man-BodyShaper.webp" alt="" class="pd-img">
+                        </a>
+
+                        <div class="Like-See">
+                            <div class="like LikeSee"><i class="bi bi-heart"></i></div>
+                            <div class="see LikeSee"><i class="bi bi-eye"></i></div>
+                        </div>
+
+                        <div class="discount-btn icon-button d-flex">
+                            <span>%50</span>
+                        </div>
+
+                    </div>
+
+                    <div class="ProductName">
+                        <a href="#" class="">Catapult For Dogs</a>
+                    </div>
+                    <div class="ProductDescription">
+                        <p>Lorem ipsum dolor sit amet...</p>
+                    </div>
+
+                    <div class="ProductPrice">
+                        <small>&dollar;99.99</small>
+                        <span>&dollar;49.99</span>
+                    </div>
+
+                    <div class="HideButton">
+                        <a href="">Add to cart</a>
+                    </div>
+
+                </div>
+
+                <div class="box">
+
+                    <div class="header-box">
+
+                        <a href="" class="img-link">
+                            <img src="assets/image/product-img/man-BodyShaper2.webp" alt="" class="pd-img">
+                        </a>
+
+                        <div class="Like-See">
+                            <div class="like LikeSee"><i class="bi bi-heart"></i></div>
+                            <div class="see LikeSee"><i class="bi bi-eye"></i></div>
+                        </div>
+
+                        <div class="discount-btn icon-button d-flex">
+                            <span>%50</span>
+                        </div>
+
+                    </div>
+
+                    <div class="ProductName">
+                        <a href="#" class="">Catapult For Dogs</a>
+                    </div>
+                    <div class="ProductDescription">
+                        <p>Lorem ipsum dolor sit amet...</p>
+                    </div>
+
+                    <div class="ProductPrice">
+                        <small>&dollar;99.99</small>
+                        <span>&dollar;49.99</span>
+                    </div>
+
+                    <div class="HideButton">
+                        <a href="">Add to cart</a>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- see more button -->
+            <div class="SeeMore d-flex">
+                <div class="bttnSeeMore">
+                    <a href="" class="SeeMoreLink cta d-flex">
+                        <span>See all</span> <i class="bi bi-chevron-right"></i>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+        <!-- //// -->
+
+        <!-- Advertise Banner (2) -->
+        <div class="Advertise d-block">
+            <div class="AdvertiseItem ">
+
+                <a href="#" class="AdvertiseLink d-block">
+
+                    <img src="assets/image/file_cover_-_2.webp" alt="" class="AdvertiseBanner">
+
+                </a>
+
+            </div>
+        </div>
+        <!-- //// -->
+
+        <!-- Accessories Products -->
+        <div class="product-list">
+
+            <div class="product-header d-flex">
+                <h2 class="product-list-name">Accessories Products</h2>
+            </div>
+
+            <div class="product-item">
+
+                <div class="box">
+
+                    <div class="header-box">
+
+                        <a href="" class="img-link">
+                            <img src="assets/image/product-img/EyeMassager.webp" alt="" class="pd-img">
+                        </a>
+
+                        <div class="Like-See">
+                            <div class="like LikeSee"><i class="bi bi-heart"></i></div>
+                            <div class="see LikeSee"><i class="bi bi-eye"></i></div>
+                        </div>
+
+                        <div class="discount-btn icon-button d-flex">
+                            <span>%50</span>
+                        </div>
+
+                    </div>
+
+                    <div class="ProductName">
+                        <a href="#" class="">Catapult For Dogs</a>
+                    </div>
+                    <div class="ProductDescription">
+                        <p>Lorem ipsum dolor sit amet...</p>
+                    </div>
+
+                    <div class="ProductPrice">
+                        <small>&dollar;99.99</small>
+                        <span>&dollar;49.99</span>
+                    </div>
+
+                    <div class="HideButton">
+                        <a href="">Add to cart</a>
+                    </div>
+
+                </div>
+
+                <div class="box">
+
+                    <div class="header-box">
+
+                        <a href="" class="img-link">
+                            <img src="assets/image/product-img/MiniShaver.webp" alt="" class="pd-img">
+                        </a>
+
+                        <div class="Like-See">
+                            <div class="like LikeSee"><i class="bi bi-heart"></i></div>
+                            <div class="see LikeSee"><i class="bi bi-eye"></i></div>
+                        </div>
+
+                        <div class="discount-btn icon-button d-flex">
+                            <span>%50</span>
+                        </div>
+
+                    </div>
+
+                    <div class="ProductName">
+                        <a href="#" class="">Catapult For Dogs</a>
+                    </div>
+                    <div class="ProductDescription">
+                        <p>Lorem ipsum dolor sit amet...</p>
+                    </div>
+
+                    <div class="ProductPrice">
+                        <small>&dollar;99.99</small>
+                        <span>&dollar;49.99</span>
+                    </div>
+
+                    <div class="HideButton">
+                        <a href="">Add to cart</a>
+                    </div>
+
+                </div>
+
+                <div class="box">
+
+                    <div class="header-box">
+
+                        <a href="" class="img-link">
+                            <img src="assets/image/product-img/man-BodyShaper.webp" alt="" class="pd-img">
+                        </a>
+
+                        <div class="Like-See">
+                            <div class="like LikeSee"><i class="bi bi-heart"></i></div>
+                            <div class="see LikeSee"><i class="bi bi-eye"></i></div>
+                        </div>
+
+                        <div class="discount-btn icon-button d-flex">
+                            <span>%50</span>
+                        </div>
+
+                    </div>
+
+                    <div class="ProductName">
+                        <a href="#" class="">Catapult For Dogs</a>
+                    </div>
+                    <div class="ProductDescription">
+                        <p>Lorem ipsum dolor sit amet...</p>
+                    </div>
+
+                    <div class="ProductPrice">
+                        <small>&dollar;99.99</small>
+                        <span>&dollar;49.99</span>
+                    </div>
+
+                    <div class="HideButton">
+                        <a href="">Add to cart</a>
+                    </div>
+
+                </div>
+
+                <div class="box">
+
+                    <div class="header-box">
+
+                        <a href="" class="img-link">
+                            <img src="assets/image/product-img/man-BodyShaper2.webp" alt="" class="pd-img">
+                        </a>
+
+                        <div class="Like-See">
+                            <div class="like LikeSee"><i class="bi bi-heart"></i></div>
+                            <div class="see LikeSee"><i class="bi bi-eye"></i></div>
+                        </div>
+
+                        <div class="discount-btn icon-button d-flex">
+                            <span>%50</span>
+                        </div>
+
+                    </div>
+
+                    <div class="ProductName">
+                        <a href="#" class="">Catapult For Dogs</a>
+                    </div>
+                    <div class="ProductDescription">
+                        <p>Lorem ipsum dolor sit amet...</p>
+                    </div>
+
+                    <div class="ProductPrice">
+                        <small>&dollar;99.99</small>
+                        <span>&dollar;49.99</span>
+                    </div>
+
+                    <div class="HideButton">
+                        <a href="">Add to cart</a>
+                    </div>
+
+                </div>
+
+                <!-- //// -->
+
+                <div class="box">
+
+                    <div class="header-box">
+
+                        <a href="" class="img-link">
+                            <img src="assets/image/product-img/EyeMassager.webp" alt="" class="pd-img">
+                        </a>
+
+                        <div class="Like-See">
+                            <div class="like LikeSee"><i class="bi bi-heart"></i></div>
+                            <div class="see LikeSee"><i class="bi bi-eye"></i></div>
+                        </div>
+
+                        <div class="discount-btn icon-button d-flex">
+                            <span>%50</span>
+                        </div>
+
+                    </div>
+
+                    <div class="ProductName">
+                        <a href="#" class="">Catapult For Dogs</a>
+                    </div>
+                    <div class="ProductDescription">
+                        <p>Lorem ipsum dolor sit amet...</p>
+                    </div>
+
+                    <div class="ProductPrice">
+                        <small>&dollar;99.99</small>
+                        <span>&dollar;49.99</span>
+                    </div>
+
+                    <div class="HideButton">
+                        <a href="">Add to cart</a>
+                    </div>
+
+                </div>
+
+                <div class="box">
+
+                    <div class="header-box">
+
+                        <a href="" class="img-link">
+                            <img src="assets/image/product-img/MiniShaver.webp" alt="" class="pd-img">
+                        </a>
+
+                        <div class="Like-See">
+                            <div class="like LikeSee"><i class="bi bi-heart"></i></div>
+                            <div class="see LikeSee"><i class="bi bi-eye"></i></div>
+                        </div>
+
+                        <div class="discount-btn icon-button d-flex">
+                            <span>%50</span>
+                        </div>
+
+                    </div>
+
+                    <div class="ProductName">
+                        <a href="#" class="">Catapult For Dogs</a>
+                    </div>
+                    <div class="ProductDescription">
+                        <p>Lorem ipsum dolor sit amet...</p>
+                    </div>
+
+                    <div class="ProductPrice">
+                        <small>&dollar;99.99</small>
+                        <span>&dollar;49.99</span>
+                    </div>
+
+                    <div class="HideButton">
+                        <a href="">Add to cart</a>
+                    </div>
+
+                </div>
+
+                <div class="box">
+
+                    <div class="header-box">
+
+                        <a href="" class="img-link">
+                            <img src="assets/image/product-img/man-BodyShaper.webp" alt="" class="pd-img">
+                        </a>
+
+                        <div class="Like-See">
+                            <div class="like LikeSee"><i class="bi bi-heart"></i></div>
+                            <div class="see LikeSee"><i class="bi bi-eye"></i></div>
+                        </div>
+
+                        <div class="discount-btn icon-button d-flex">
+                            <span>%50</span>
+                        </div>
+
+                    </div>
+
+                    <div class="ProductName">
+                        <a href="#" class="">Catapult For Dogs</a>
+                    </div>
+                    <div class="ProductDescription">
+                        <p>Lorem ipsum dolor sit amet...</p>
+                    </div>
+
+                    <div class="ProductPrice">
+                        <small>&dollar;99.99</small>
+                        <span>&dollar;49.99</span>
+                    </div>
+
+                    <div class="HideButton">
+                        <a href="">Add to cart</a>
+                    </div>
+
+                </div>
+
+                <div class="box">
+
+                    <div class="header-box">
+
+                        <a href="" class="img-link">
+                            <img src="assets/image/product-img/man-BodyShaper2.webp" alt="" class="pd-img">
+                        </a>
+
+                        <div class="Like-See">
+                            <div class="like LikeSee"><i class="bi bi-heart"></i></div>
+                            <div class="see LikeSee"><i class="bi bi-eye"></i></div>
+                        </div>
+
+                        <div class="discount-btn icon-button d-flex">
+                            <span>%50</span>
+                        </div>
+
+                    </div>
+
+                    <div class="ProductName">
+                        <a href="#" class="">Catapult For Dogs</a>
+                    </div>
+                    <div class="ProductDescription">
+                        <p>Lorem ipsum dolor sit amet...</p>
+                    </div>
+
+                    <div class="ProductPrice">
+                        <small>&dollar;99.99</small>
+                        <span>&dollar;49.99</span>
+                    </div>
+
+                    <div class="HideButton">
+                        <a href="">Add to cart</a>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- see more button -->
+            <div class="SeeMore d-flex">
+                <div class="bttnSeeMore">
+                    <a href="" class="SeeMoreLink cta d-flex">
+                        <span>See all</span> <i class="bi bi-chevron-right"></i>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+        <!-- //// -->
+
+        <!-- Sign in content -->
+        <section class="SignIn">
+            <div class="SignInItem d-flex">
+
+                <h3 class="SignInDC">Be the first to know about new products, special discounts and more.</h3>
+                <button class="SignInBtn"><a href="" class="d-flex">SIGN IN</a></button>
+            
+            </div>
+        </section>
+    <!-- //// -->
+
+    </main>
+
+    <footer class="footer">
+
+        <section class="FooterItem">
+
+            <div class="footerLinks d-flex">
+
+                <section class="FooterLinkCategory">
+
+                    <h4>HELP</h4>
+
+                    <a href="#" class="FtCtLink">Track Your Order</a>
+                    <a href="#" class="FtCtLink">Shipping & Delivery</a>
+                    <a href="#" class="FtCtLink">Terms Of Service</a>
+                    <a href="#" class="FtCtLink">Privacy Policy</a>
+
+                </section>
+
+                <section class="FooterLinkCategory">
+
+                    <h4>ABOUT</h4>
+
+                    <a href="#" class="FtCtLink">About Us</a>
+                    <a href="#" class="FtCtLink">Contact</a>
+                    <a href="#" class="FtCtLink">FAQ</a>
+
+                </section>
+
+                <section class="FooterLinkCategory">
+
+                    <h4>PAYMENT GATEWAYS</h4>
+
+                    <div class="payment d-flex">
+                        <div class="PaymentIcon">
+                            <a href="#" class="PaymentLinks">
+                                <img src="assets/image/paypal.png" class="PaymentLogo-img">
+                            </a>
+                        </div>
+                        <div class="PaymentIcon">
+                            <a href="#" class="PaymentLinks">
+                                <img src="assets/image/payment.png" alt="" class="PaymentLogo-img">
+                            </a>
+                        </div>
+                        <div class="PaymentIcon">
+                            <a href="#" class="PaymentLinks">
+                                <img src="assets/image/sslverify.png" alt="" class="PaymentLogo-img">
+                            </a>
+                        </div>
+                        <div class="PaymentIcon">
+                            <a href="#" class="PaymentLinks">
+                                <img src="assets/image/Bitcoin.png" alt="" class="PaymentLogo-img">
+                            </a>
+                        </div>
+                    </div>
+
+                </section>
+
+            </div>
+
+            <div class="SocialNetworks">
+                <div class="connections">
+
+                    <h5 id="wrapper-header">Follow us on social networks</h5>
+
+                    <div class="wrapper">
+
+                        <a id="wrapper-a" href="#">
+                            <div class="icon twitter">
+                                <div class="tooltip">Twitter</div>
+                                <span><i class="bi bi-twitter"></i></span>
+                            </div>
+                        </a>
+
+                        <a id="wrapper-a" href="#">
+                            <div class="icon telegram">
+                                <div class="tooltip">Telegram</div>
+                                <span><i class="bi bi-telegram"></i></span>
+                            </div>
+                        </a>
+
+                        <a id="wrapper-a" href="#">
+                            <div class="icon tiktok">
+
+                                <div class="tooltip">Tiktok</div>
+                                <span><i class="bi bi-tiktok"></i></span>
+
+                            </div>
+                        </a>
+
+                        <a id="wrapper-a" href="#">
+                            <div class="icon youtube">
+                                <div class="tooltip">Youtube</div>
+                                <span><i class="bi bi-youtube"></i></span>
+                            </div>
+                        </a>
+
+                        <a id="wrapper-a" href="#">
+                            <div class="icon instagram">
+                                <div class="tooltip">Instagram</div>
+                                <span><i class="bi bi-instagram"></i></span>
+                            </div>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div class="CopyRight d-flex">
+                    <p>&copy; Masiih jebraeili 2021</p>
+                </div>
+
+            </div>
+
+        </section>
+
+        
+
+    </footer>
+
+</body>
+
+</html>
